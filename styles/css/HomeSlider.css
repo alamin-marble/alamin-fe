@@ -1,0 +1,45 @@
+#app{height:100%}
+body,html{position:relative;height:100%}
+.swiper{width:100%;height:100vh;z-index:0!important}
+.mySwiper .swiper-slide{text-align:center;font-size:18px;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
+.mySwiper .swiper-slide img{display:block;width:100%;height:100%;object-fit:cover;object-position:right;padding-right:5px}
+html[dir=ltr] .mySwiper .swiper-slide img{padding-right:auto;padding-left:9px}
+.mySwiper .swiper-pagination{height:100%;display:flex;align-items:center;flex-direction:column;justify-content:center;background:url(/assets/static/theme.png);background-size:110% 87%;background-repeat:no-repeat;background-position:top;right:0!important}
+html[dir=ltr] .mySwiper .swiper-pagination{right:99%!important}
+.mySwiper .swiper-pagination-bullet{background:#eadeda;opacity:1}
+.mySwiper .swiper-pagination-bullet-active{background:#be927f}
+.mySwiper span.swiper-pagination-bullet{width:10px;height:60px;border-radius:0}
+.SwiperData{position:absolute;right:15%;bottom:25%;width:30%}
+html[dir=ltr] .SwiperData{right:auto;left:15%}
+.SwiperSubTitle{text-align:right;color:#fff;font-size:26px;width:65%;padding-bottom:35px}
+html[dir=ltr] .SwiperSubTitle{text-align:left}
+.SwiperTitle{font-size:42px;font-weight:700;color:#fff;text-align:right}
+html[dir=ltr] .SwiperTitle{text-align:left}
+.SwiperLinksCN{display:flex;align-items:flex-start;padding-top:22px}
+html[dir=ltr] .SwiperLinksCN{flex-direction:initial;direction:ltr;text-align:left;align-items:end}
+.SwiperLinksCN a{color:#fff;margin-left:24px;font-size:20px;text-decoration:none;padding:8px;position:relative;border-bottom:2px solid #fff}
+/* .SwiperLinksCN a:after{width:100%;height:2px;position:absolute;bottom:0;background:#fff;content:"";left:0;transition:width .5s ease,background-color .5s ease;display:block;margin:auto}
+.SwiperLinksCN a:hover:after{background-color:#fff;width:0;transition:width .5s ease,background-color .5s ease} */
+@media screen and (max-width:1680px){
+.SwiperSubTitle{font-size:21px;width:83%}
+.SwiperTitle{font-size:31px}
+.SwiperLinksCN a{font-size:16px}
+}
+@media screen and (max-width:900px){
+.SwiperSubTitle{font-size:18px}
+.SwiperTitle{font-size:25px}
+.SwiperData{width:85%;bottom:10%;right:11%}
+.SwiperLinksCN a{font-size:16px;padding:5px;margin-left:14px}
+.mySwiper{height:70vh}
+.mySwiper span.swiper-pagination-bullet{width:10px;height:30px}
+.mySwiper .swiper-pagination{right:auto!important;left:5px;top:58%}
+.mySwiper .swiper-slide img{padding-right:0}
+html[dir=ltr] .mySwiper .swiper-pagination{right:98%!important}
+html[dir=ltr] .mySwiper .swiper-slide img{padding-right:0;padding-left:0}
+}
+@media screen and (max-width:320px){
+.SwiperTitle{font-size:19px}
+.SwiperSubTitle{font-size:16px;padding-bottom:10px}
+.SwiperLinksCN a{font-size:14px;margin-left:9px}
+.SwiperData{width:90%}
+}

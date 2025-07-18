@@ -1,0 +1,12 @@
+[0;1;31m●[0m nginx.service - nginx - high performance web server
+   Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled)
+   Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2024-08-28 04:57:41 EDT; 58s ago
+     Docs: http://nginx.org/en/docs/
+  Process: 599105 ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf [0;1;31m(code=exited, status=1/FAILURE)[0m
+ Main PID: 597407 (code=exited, status=0/SUCCESS)
+
+Aug 28 04:57:41 server.alamin-marble.com systemd[1]: Starting nginx - high performance web server...
+Aug 28 04:57:41 server.alamin-marble.com nginx[599105]: nginx: [emerg] "proxy_pass" directive is duplicate in /etc/nginx/conf.d/your-config-file.conf:7
+Aug 28 04:57:41 server.alamin-marble.com systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+Aug 28 04:57:41 server.alamin-marble.com systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+Aug 28 04:57:41 server.alamin-marble.com systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start nginx - high performance web server.[0m

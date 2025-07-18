@@ -1,0 +1,54 @@
+.MyProductSlider{width:100%;height:auto;padding-bottom:15% !important;direction: rtl;}
+html[dir=ltr] .MyProductSlider{direction: ltr;} 
+.MyProductSlider .swiper-slide{text-align:center;font-size:18px;background:#fff;display:flex;justify-content:center;align-items:center}
+.MyProductSlider .swiper-slide img{display:block;width:100%;height:240px;object-fit:cover;cursor:pointer}
+.swiper-button-next,.swiper-rtl .swiper-button-prev{right:45% !important;left:auto !important}
+.swiper-button-prev,.swiper-rtl .swiper-button-next{left:45% !important;right:auto !important}
+.swiper-button-next,.swiper-button-prev{top:auto !important;bottom:3% !important;color:#fc9 !important}
+.swiper-button-next:after,.swiper-button-prev:after{font-size:30px !important}
+.ProductSliderTitle{color:#162640;font-size:44px;font-weight:700;padding-top:150px}
+.ProductSliderSubTitle{color:#162640;font-size:17px;padding-top:14px;padding-bottom:80px}
+.ProductMask{position:relative;padding-bottom:40px;    filter: drop-shadow(-1px 7px 4px rgba(0, 0, 0, 0.1));}
+.ProductMask img{width:100%;height:235px;object-fit:cover;object-position:85%}
+.ProductShape{width:100%;height:235px;position:relative;background:linear-gradient(to left,#fff 50%,#b68a7b 50%);background-size:200% 100%;background-position:left bottom;-webkit-clip-path:polygon(0 39%,57% 0,100% 50%,100% 51%,57% 1%,0 40%);clip-path:polygon(0 39%,57% 0,100% 50%,100% 51%,57% 1%,0 40%)}
+.ProductSliderInfo:hover .ProductShape{animation:mymove 10s infinite}
+.ProductShape2{width:100%;height:235px;display:block;position:absolute;top:15px;-webkit-clip-path:polygon(0 39%,57% 0,100% 50%,69% 100%,0 100%,0 39%);clip-path:polygon(0 39%,57% 0,100% 50%,69% 100%,0 100%,0 39%)}
+.HomeProductSlider{width:90%;position:relative}
+.ProductColor{color:#162640;font-size:20px}
+.ProductDevider{font-size:20px}
+.ProductCountry{color:#162640;font-size:25px;font-weight:700}
+.ProductType{color:#162640;font-size:20px;padding-bottom:10px}
+@keyframes mymove{
+0%{background-position:right bottom}
+50%{background-position:left bottom}
+100%{background-position:right bottom}
+}
+.ProductSliderInfo{width:80%}
+.fancybox__caption{font-size:35px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-direction:row-reverse}
+.fancybox__caption a{margin-right:40px}
+@media screen and (max-width:1680px){
+.ProductSliderTitle{font-size:34px;padding-top:120px}
+.ProductShape,.ProductShape2{height:185px}
+.ProductCountry{font-size:22px}
+.ProductType{font-size:18px;padding-bottom:22px}
+.ProductSliderInfo{width:100%}
+}
+@media screen and (max-width:900px){
+.MyProductSlider{width:100%;height:auto;padding-bottom:30% !important}
+.HomeProductSlider{width:100%;position:relative}
+.ProductSliderInfo{width:83%}
+.swiper-button-next,.swiper-rtl .swiper-button-prev{right:40% !important;left:auto !important}
+.swiper-button-prev,.swiper-rtl .swiper-button-next{left:40% !important;right:auto !important}
+.ProductSliderTitle{font-size:33px;padding-top:75px;width:95%;margin:0 auto}
+.ProductCountry{font-size:21px}
+.ProductColor{font-size:18px}
+.ProductType{font-size:18px;padding-bottom:23px}
+.ProductSliderSubTitle{font-size:16px;padding-top:10px;padding-bottom:60px;width:95%;margin:0 auto}
+.MyProductSlider .swiper-slide img{height:155px}
+.ProductShape,.ProductShape2{height:160px}
+}
+@media screen and (max-width:320px) {
+    .ProductShape, .ProductShape2 {
+        height: 130px;
+    }
+}

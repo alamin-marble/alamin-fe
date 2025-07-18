@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-L
+  RewriteRule . /index.html [L]
+
+</IfModule>
+RewriteCond %{HTTP_HOST} ^alamin-marble\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.alamin-marble\.com$
+RewriteRule ^/?$ "http\:\/\/alamin-marble\.com\:8080\/" [R=301,L]
+

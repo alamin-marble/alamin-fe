@@ -1,0 +1,5 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "@fancyapps/ui/dist/fancybox.css";
+@import "animate.css/animate.min.css";
+@import "react-tabs/style/react-tabs.css";
+@import "../components/Products/Sections/style.css";

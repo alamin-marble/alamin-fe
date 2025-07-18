@@ -1,0 +1,17 @@
+[0;1;31m●[0m nginx.service - nginx - high performance web server
+   Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled)
+   Active: [0;1;31mfailed[0m (Result: exit-code) since Thu 2024-08-29 03:36:13 EDT; 1s ago
+     Docs: http://nginx.org/en/docs/
+  Process: 660222 ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf [0;1;31m(code=exited, status=1/FAILURE)[0m
+ Main PID: 597407 (code=exited, status=0/SUCCESS)
+
+Aug 29 03:36:10 server.alamin-marble.com systemd[1]: Starting nginx - high performance web server...
+Aug 29 03:36:10 server.alamin-marble.com nginx[660222]: nginx: [emerg] bind() to 0.0.0.0:8080 failed (98: Address already in use)
+Aug 29 03:36:11 server.alamin-marble.com nginx[660222]: nginx: [emerg] bind() to 0.0.0.0:8080 failed (98: Address already in use)
+Aug 29 03:36:11 server.alamin-marble.com nginx[660222]: nginx: [emerg] bind() to 0.0.0.0:8080 failed (98: Address already in use)
+Aug 29 03:36:12 server.alamin-marble.com nginx[660222]: nginx: [emerg] bind() to 0.0.0.0:8080 failed (98: Address already in use)
+Aug 29 03:36:12 server.alamin-marble.com nginx[660222]: nginx: [emerg] bind() to 0.0.0.0:8080 failed (98: Address already in use)
+Aug 29 03:36:13 server.alamin-marble.com nginx[660222]: nginx: [emerg] still could not bind()
+Aug 29 03:36:13 server.alamin-marble.com systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+Aug 29 03:36:13 server.alamin-marble.com systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+Aug 29 03:36:13 server.alamin-marble.com systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start nginx - high performance web server.[0m

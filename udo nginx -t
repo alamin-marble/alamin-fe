@@ -1,0 +1,22 @@
+[0;1;32m●[0m nginx.service - nginx - high performance web server
+   Loaded: loaded (/usr/lib/systemd/system/nginx.service; disabled; vendor preset: disabled)
+   Active: [0;1;32mactive (running)[0m since Wed 2024-08-28 04:31:27 EDT; 13s ago
+     Docs: http://nginx.org/en/docs/
+  Process: 597403 ExecStop=/bin/kill -s TERM $MAINPID (code=exited, status=0/SUCCESS)
+  Process: 597405 ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf (code=exited, status=0/SUCCESS)
+ Main PID: 597407 (nginx)
+    Tasks: 7 (limit: 23153)
+   Memory: 5.2M
+   CGroup: /system.slice/nginx.service
+           ├─597406 nginx: logger process
+           ├─597407 nginx: master process /usr/sbin/nginx -c /etc/nginx/nginx.conf
+           ├─597408 /usr/local/cpanel/bin/splitlogs --dir=/var/log/nginx/domains --main=server.alamin-marble.com --suffix=-bytes_log
+           ├─597409 /usr/local/cpanel/bin/splitlogs --dir=/var/log/nginx/domains --main=server.alamin-marble.com --mainout=/var/log/nginx/access.log
+           ├─597410 nginx: worker process
+           ├─597411 nginx: cache manager process
+           └─597412 nginx: cache loader process
+
+Aug 28 04:31:27 server.alamin-marble.com systemd[1]: nginx.service: Succeeded.
+Aug 28 04:31:27 server.alamin-marble.com systemd[1]: Stopped nginx - high performance web server.
+Aug 28 04:31:27 server.alamin-marble.com systemd[1]: Starting nginx - high performance web server...
+Aug 28 04:31:27 server.alamin-marble.com systemd[1]: Started nginx - high performance web server.
